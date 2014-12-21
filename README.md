@@ -10,29 +10,30 @@ Version: 25 Jan 2014
 
 ####Compiling 
 ```
-javac -cp . *.java 
+javac -cp lib/Jama-1.0.3.jar src/*.java -d bin/ 
 ```
 ####Running
 ```
-java -cp . SequenceComparison < name of configuration file >
+java -cp . bin/SequenceComparison < name of configuration file >
 ```
  
+####Configuration file Parameters
+	- sequenceInputFile : Name of input sequence file with many ACTG gene sequences.
 
-#### Configuration file
-	- sequenceInputFile = sequence2.input
+	- sequenceA : The number of the first sequence in the file
 
-	- sequenceA = 1
+	- sequenceB : The number of the first sequence in the file
 
-	- sequenceB = 2
+	- weightMatrixFile : A 4x4 matrix with weights of different alignments
 
-	- weightMatrixFile = matrix.input
+	- gapPenaltyFile : A file with the gap penalty.
 
-	- gapPenaltyFile = penalty.input
+	- maxColumns : The maximum number of columns to display
 
-	- maxColumns = 60
+	- writeToFile : Should the output be written to file
 
-	- writeToFile = false
+	- outputFile : The name of the output file
 
-	- outputFile = sequenceComparison.out
+	- debugMode : Turns on debug mode
 
-	- debugMode = false
+Sample configurationa and input files are given in the examples directory.
