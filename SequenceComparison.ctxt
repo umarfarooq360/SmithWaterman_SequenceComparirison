@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=confFileName
+comment0.target=SequenceComparison(java.lang.String)
+comment0.text=\r\n\ Creates\ a\ instance\ of\ Sequence\ Comparison.\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\nRun\ the\ program\ with\ one\ argument\ which\ is\ the\ config\ file\ name.\r\n
+comment2.params=filename
+comment2.target=void\ readConfigFile(java.lang.String)
+comment2.text=\r\nThis\ method\ reads\ in\ the\ config\ file.\r\n\r\n@param\ filename\ This\ is\ the\ name\ of\ the\ configuration\ file\r\n
+comment3.params=
+comment3.target=void\ initialize()
+comment3.text=\r\n\ Uses\ the\ information\ from\ configuration\ file\ to\ read\ the\ weight,\ gap\ penalty\ and\r\n\ sequence\ files\ and\ initializes\ the\ required\ instance\ variables.\r\n
+comment4.params=
+comment4.target=void\ produceOutput()
+comment4.text=\r\nThis\ method\ produces\ output\ either\ by\ writing\ to\ file\ or\ by\ printing\ to\ std\ output.\r\n
+numComments=5
